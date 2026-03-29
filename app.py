@@ -48,7 +48,7 @@ def show_recommendations(prefix=""):
         random_movies = df_movie.sample(10, random_state=42)
         
         for movie_id, movie in random_movies.iterrows():
-            @st.write(f"movie_id: {movie_id}, type: {type(movie_id)}")
+            #st.write(f"movie_id: {movie_id}, type: {type(movie_id)}")
             with st.container():
                 col1, col2= st.columns([0.8, 0.2], vertical_alignment="center")
                 with col1:
